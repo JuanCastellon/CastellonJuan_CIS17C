@@ -1,0 +1,94 @@
+Instructions for CSC 17c Final
+
+Each problem requires a program and some analysis.
+Scan the analysis by scanner or by phone.
+Place all solutions in a folder and submit to
+canvas as well as by email.
+
+Problem 1 - Hashing
+We would like to use initials to locate
+an individual.  For instance, MEL should
+locate the person Mark E. Lehr.  Note:
+this is all upper case.  Generate a hash
+function for the above using the numbers
+on your telephone.  You know, each letter
+has a number associated with it, so examine
+your telephone keypad.  Generate 512 random
+3 letter initials and take statistics on
+a linked list array size 512 to hold this 
+information.
+Report how many have no elements, 1 element,
+2 elements, etc...  Also, what is the maximum
+number of collisions.  Do both results agree with 
+the hashing statistics distribution?
+
+Problem 2 - Stacks
+Take my hyperbolic sin/cos recursive function 
+place the angle on a sine or cosine stack that 
+represents a call to the sine or cosine.
+When the program returns, examine the stack
+for how many times the hyp sine was called and
+how many times hyp sine/cosine was called vs. the
+value you were trying to find.  Put the results
+in a table.  Range of values from -1 to 1 in 
+.1 radian increments.
+Does the number of function calls agree with
+what you predict it should be?
+
+Problem 3 - Queues
+Let us say you are in a line at the video store
+or bank like I was last weekend.  One line, 
+yet there are 3 clerks/tellers which service
+the same line.  Simulate the following,
+Clerk 1 - Services customers on the average 1/min
+Clerk 2 - Services customers on the average 0.5/min
+Clerk 3 - Services customers on the average 0.75/min
+Customers - Arrive at 4/minute intervals.
+When the line gets to 5 customers add one more Clerk
+with the same service rate as Clerk 1.  Add one more
+clerk similarly for each 5 customers.  Take tellers
+away when they have serviced the line according to
+how they were added.  For instance, if a 4th clerk
+was added to the line because there were 5 customers
+waiting then remove the clerk when the customer count 
+in line goes to zero.
+What is my average customer wait time?
+What is the max number of customers in the line.
+If you randomize servicing and arrival times by +-80%
+how does this change the results.
+
+Problem 4 - Sorting
+Create a list of 100000 random short integers.
+Use the merge and selection sorting routines we 
+discussed to choose the top p elements in the list.  
+Let us say for example p is 8.
+Then show by timing, recording operations and
+analysis the Order of each algorithm.
+
+
+Problem 5 - Binary Trees
+Take problem 1 and put each of the 3 letters in
+a sorted binary tree.  Compare #nodes to identify a
+match with the hash vs. the tree.
+
+Problem 6 - Weighted Graph
+In the vertex and edge structure defined below
+Vertex	Edge	Vertex
+SFO	    2703	BOS
+SFO	    1847	ORD
+ORD	     866	BOS
+ORD	     741	JFK
+JFK	     188	BOS
+SFO	    1463	DFW
+DFW	     801	ORD
+DFW	    1122	MIA
+MIA	    1091	JFK
+MIA	    1257	BOS
+SFO	     338	LAX
+LAX	    1234	DFW
+LAX	    2341	MIA
+
+a)  Find the shortest distance between
+BOS and LAX.
+
+b)  Find the minimum spanning tree.
